@@ -10,8 +10,18 @@ h1 {
     padding: 20px;
     border: 1px solid #333;
 }
-header{
-    width: 100%;
-    background-color: lightgreen;
-    height: 120px;
+*{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    
 }
