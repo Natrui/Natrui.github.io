@@ -22,6 +22,8 @@ li{
     text-decoration: none;
     list-style: none;
 }
-body{
-    
+header{
+    width: 100%;
+    background: #d8e3ab;
+    height: 100px;
 }
