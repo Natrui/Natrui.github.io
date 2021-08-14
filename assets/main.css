@@ -28,3 +28,8 @@ header{
     height: 100px;
     background: #D8E3AB url(logo.png) no-repeat 5% 50%;
 }
+.title {
+    font-size: 36px;
+    padding-top: 10px;
+    text-align: center;
+}
