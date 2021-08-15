@@ -59,7 +59,7 @@ header{
 #navbar {
     border: 2px solid black;
     height: 35%;
-    margin: 10px;
+    margin: 0;
     padding: 0;
     width: 200px;
 }
