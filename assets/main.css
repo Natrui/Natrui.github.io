@@ -57,15 +57,18 @@ header{
     padding: 0px 10px;
 }
 #navbar {
-    border: 2px solid black;
+    border: 1px solid black;
     height: 35%;
     margin: 0;
     padding: 0;
     width: 200px;
 }
-#navbar:hover div {
-    background-color: burlywood;
+#navbar: div {
     padding: 30px 30px;
+}
+#navbar:hover {
+    background-color: #FCF3CF;
+    border: 1px solid black;
 }
 .rg:hover {
     color: blue;
