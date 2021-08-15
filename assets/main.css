@@ -1,4 +1,8 @@
+html {
+    height: 100%;
+}
 body {
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -34,6 +38,7 @@ header{
     /*background: #D8E3AB url(logo.png) no-repeat 5% 50%;*/
 }
 .main {
+    flex: 1;
     display: flex;
     flex-direction: row;
 }
@@ -63,15 +68,18 @@ header{
     padding: 0;
     width: 200px;
 }
-#navbar: div {
+#navbar div {
+    border-bottom: 1px solid black;
     padding: 30px 30px;
 }
-#navbar:hover {
+#navbar div:hover {
     background-color: #FCF3CF;
     border: 1px solid black;
 }
-.rg:hover {
+#navbar div:hover a {
     color: blue;
+    font-size: larger;
+    text-decoration: underline;
 }
 .footer {
     bottom: 0;
