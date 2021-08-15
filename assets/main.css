@@ -7,8 +7,7 @@ h1 {
     flex-direction: row;
 }
 .horizontal div {
-    padding: 20px;
-    border: 1px solid #333;
+    padding: 35     px;
 }
 *{
     color: black;
@@ -31,6 +30,22 @@ header{
     background: #FCF3CF ;
     height: 120px;
     /*background: #D8E3AB url(logo.png) no-repeat 5% 50%;*/
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.main .content {
+    border: 1px solid green;
+    width: 100%;
+}
+.main .content .article {
+    border: 1px solid red;
+    width: 600px;
+    margin: 20px auto;
+}
+.article p {
+    margin-bottom: 20px;
 }
 .title {
     width: 100%;
