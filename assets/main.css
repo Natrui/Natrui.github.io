@@ -1,3 +1,7 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
 h1 {
     color:black;
 }
@@ -36,11 +40,9 @@ header{
     flex-direction: row;
 }
 .main .content {
-    border: 1px solid green;
     width: 100%;
 }
-.main .content .article {
-    border: 1px solid red;
+.main .content .article { 
     width: 600px;
     margin: 20px auto;
 }
@@ -71,10 +73,9 @@ header{
     color: #FCF3cf;
 }
 .footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 100px;
     background:#FCF3CF;
 }
