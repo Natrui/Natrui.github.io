@@ -11,6 +11,7 @@ h1 {
     border: 1px solid #333;
 }
 *{
+    color: black;
     margin: 0;
     padding: 0;
 
@@ -27,7 +28,7 @@ header{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    background: #d8e3ab;
+    background: #FCF3CF ;
     height: 120px;
     /*background: #D8E3AB url(logo.png) no-repeat 5% 50%;*/
 }
@@ -42,12 +43,23 @@ header{
 }
 #navbar {
     height: 35%;
-    border: 10px solid red;
     margin: 0;
     padding: 0;
     width: 200px;
 }
 #navbar div {
-    border: 1px solid #333;
+    
+    
     padding: 30px 30px;
+}
+.rg:hover {
+    color: #FCF3cf;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background:#FCF3CF;
 }
