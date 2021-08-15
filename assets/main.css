@@ -5,19 +5,17 @@ body {
 h1 {
     color:black;
 }
-
 .horizontal { 
     display:flex;
     flex-direction: row;
 }
 .horizontal div {
-    padding: 35     px;
+    padding: 35px;
 }
 *{
     color: black;
     margin: 0;
     padding: 0;
-
 }
 a{
     text-decoration: none;
@@ -59,18 +57,18 @@ header{
     padding: 0px 10px;
 }
 #navbar {
+    border: 2px solid black;
     height: 35%;
-    margin: 0;
+    margin: 10px;
     padding: 0;
     width: 200px;
 }
-#navbar div {
-    
-    
+#navbar:hover div {
+    background-color: burlywood;
     padding: 30px 30px;
 }
 .rg:hover {
-    color: #FCF3cf;
+    color: blue;
 }
 .footer {
     bottom: 0;
