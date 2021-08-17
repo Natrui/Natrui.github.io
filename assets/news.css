@@ -32,6 +32,12 @@ header {
 .logo{
     padding: 0px 10px;
 }
+.active {
+    background-color: #FCF3CF;
+}
+.active a {
+    color: blue;
+}
 #navbar {
     border: 1px solid black;
     height: 35%;
