@@ -31,7 +31,7 @@ header{
 .main .content {
     width: 100%;
 }
-.main .content .article { 
+.main .content .article {
     width: 600px;
     margin: 20px auto;
 }
@@ -47,6 +47,9 @@ header{
 .logo {
     padding: 0px 10px;
 }
+.logo img {
+    width: 100px;
+}
 .active {
     background-color: #FCF3CF;
 }
@@ -54,23 +57,23 @@ header{
     color:blue;
 }
 #navbar {
-    border: 1px solid black;
-    height: 35%;
     margin: 0;
     padding: 0;
     width: 200px;
 }
 #navbar div {
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    border-bottom: 0;
     padding: 30px 30px;
+}
+#navbar div:last-child {
+    border-bottom: 1px solid black;
 }
 #navbar div:hover {
     background-color: #FCF3CF;
-    border: 1px solid black;
 }
 #navbar div:hover a {
     color: blue;
-    font-size: larger;
 }
 .footer {
     bottom: 0;
