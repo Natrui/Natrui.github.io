@@ -50,10 +50,22 @@ header{
 .logo img {
     width: 100px;
 }
+.link {
+    width: 130px;
+    height: 20px;
+}
+.link a {
+    display: block; 
+    text-align: center; 
+    height: 50px; 
+    width: 100%;
+}
 .active {
+    text-align: center;
     background-color: #FCF3CF;
 }
 .active a {
+    text-align: center;
     color:blue;
 }
 #navbar {
