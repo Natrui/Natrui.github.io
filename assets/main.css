@@ -51,13 +51,12 @@ header{
     width: 100px;
 }
 #navbar div:hover {
-background-color: #FCF3CF;
+    background-color: #FCF3CF;
 }
 #navbar div:hover a {
     color: blue;
 }
 .link {
-    text-align: center;
     border: solid 1px black;
     flex-direction: column;
     width: 170px; 
@@ -71,11 +70,11 @@ background-color: #FCF3CF;
     color:black; 
 }
 .active {
+    text-align: center;
     border: solid 1px black;
     flex-direction: column;
     width: 170px;
     height: 100px;
-    text-align: center;
     background-color: #FCF3CF;
 }
 .active a {
