@@ -50,42 +50,37 @@ header{
 .logo img {
     width: 100px;
 }
+#navbar div:hover {
+background-color: #FCF3CF;
+}
+#navbar div:hover a {
+    color: blue;
+}
 .link {
-    width: 130px;
-    height: 20px;
+    text-align: center;
+    border: solid 1px black;
+    flex-direction: column;
+    width: 170px; 
+    height: 100px; 
+    background: white; 
 }
 .link a {
     display: block; 
     text-align: center; 
-    height: 50px; 
-    width: 100%;
+    height: 100%; 
+    color:black; 
 }
 .active {
+    border: solid 1px black;
+    flex-direction: column;
+    width: 170px;
+    height: 100px;
     text-align: center;
     background-color: #FCF3CF;
 }
 .active a {
     text-align: center;
     color:blue;
-}
-#navbar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-}
-#navbar div {
-    border: 1px solid black;
-    border-bottom: 0;
-    padding: 30px 30px;
-}
-#navbar div:last-child {
-    border-bottom: 1px solid black;
-}
-#navbar div:hover {
-    background-color: #FCF3CF;
-}
-#navbar div:hover a {
-    color: blue;
 }
 .footer {
     bottom: 0;
