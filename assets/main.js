@@ -35,6 +35,7 @@ function changeColor(newColor) {
 function sum(x, y) {  
   return x + y;
 }
+  let s = sum(1, 50);
 
 function initArticleTitle() {
   let currentPath = '.' + location.pathname;
@@ -51,7 +52,6 @@ function initArticleTitle() {
 }
 
 function testFunction() {
-  let s = sum(1, 50);
   let z = sum(23, 65);
   let a = 10;
   let a1 = 10 + 1;
