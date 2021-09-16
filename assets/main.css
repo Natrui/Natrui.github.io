@@ -95,9 +95,6 @@ h2 {
     height: 100px;
     background:#FCF3CF;
 }
-.center {
-    flex-direction:row;
+.main .content .culc {
     text-align: center;
-    align-items: center;
 }
-
