@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Yellow car</title>
-    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="stylesheet" href="./assets/main.css"/>
     <script src="./assets/main.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="calculator.html">
-                <img src="./assets/img/logo.png" alt="Logo" />
-            </a>
+
+<header>
+    <div class="logo">
+        <a href="calculator.html">
+            <img src="./assets/img/logo.png" alt="Logo"/>
+        </a>
+    </div>
+    <div class="title">Yellow car</div>
+</header>
+
+<div class="main">
+    <div id="navbar">
+        <div class="link"><a href="./index.html">Main</a></div>
+        <div class="link"><a href="./news.html">News</a></div>
+        <div class="link"><a href="./contacts.html">Contacts</a></div>
+        <div class="link"><a href="./aboutus.html">About us</a></div>
+        <div class="active"><a href="./calculator.html">Calculator</a></div>
+    </div>
+    <div class="content">
+        <div class="article">
+            <h2 id="article-title">*</h2>
         </div>
-        <div class="title">Yellow car</div>
-    </header>
-    <div class="main">
-        <div id="navbar">
-            <div class="link"><a href="./index.html">Main</a></div>
-            <div class="link"><a href="./news.html">News</a></div>
-            <div class="link"><a href="./contacts.html">Contacts</a></div>
-            <div class="link"><a href="./aboutus.html">About us</a></div>
-            <div class="active"><a href="./">Calculator</a></div>
-        </div>
-        <div class="content">
-            <div class="article">
-                <h2 id="article-title">*</h2>
+        <div class="calculator">
+            <div>
+                <input id="num1">
+                <input id="num2">
             </div>
-            <div class="culc">
-                <input id="num1" size="3">
-                <input id="num2" size="3">
-                <div id="operator_select">
-                    <button onclick="op='+'" id="plus">+</button>
-                    <button onclick="op='-'" id="minus">-</button>
-                    <button onclick="op='*'" id="times">*</button>
-                    <button onclick="op='/'" id="devide">/</button>
-                    <br>
-                </div>
-                <button onclick="func()">
-                    =
-                </button>
-                <p id="result"></p>
-            </div>
+            <select id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <button id="calculate-btn">=</button>
+            <button id="clear-calculator">Clear</button>
+            <p id="calc-result"></p>
         </div>
     </div>
-    </div>
-    <div>
+</div>
+
 </body>
 
 </html>

@@ -95,6 +95,28 @@ h2 {
     height: 100px;
     background:#FCF3CF;
 }
-.main .content .culc {
+.main .content .calculator {
     text-align: center;
+}
+
+input {
+    min-width: 200px;
+    margin: 10px;
+    line-height: 40px;
+    font-size: 30px;
+    padding: 3px;
+}
+
+button {
+    min-width: 100px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 23px;
+}
+
+select {
+    width: 50px;
+    font-size: 30px;
+    font-weight: bold;
 }
