@@ -74,24 +74,25 @@ function initCalculator() {
         result = num1 / num2;
         break;
     }
-    
+
     $id("calc-result").innerText = result;
 
-    function clear() {
-
-    let clearcalculator = Number($id('clearcalulator').null)
-    console.log(clear)
-    }
   }
 
-  let clearcalculator  = $id('clear')
+  function clear() {
 
-    if (clearcalculator) {
-      clearcalculator.addEventListener('click' , clear)
-    }
+    let = Number($id('clearcalulator').null)
+    console.log(clear)
+  }
+
+  let clearcalculator = $id('clearcalculator')
+
+  if (clearcalculator) {
+    clearcalculator.addEventListener('click', clearcalculator)
+  }
 
   let calculateBtn = $id('calculate-btn');
-  
+
   if (calculateBtn) {
     calculateBtn.addEventListener('click', calculate);
   }
