@@ -80,9 +80,10 @@ function initCalculator() {
   }
 
   function clear() {
-
-    let clbt = Number($id('clearcalulator').null)
-    console.log(clear)
+    let num1 = $id('num1');
+    let num2 = $id('num2');
+    num1.value = '';
+    num2.value = '';
   }
 
   let clearbtn = $id('clearbtn')
