@@ -81,14 +81,14 @@ function initCalculator() {
 
   function clear() {
 
-    let = Number($id('clearcalulator').null)
+    let clbt = Number($id('clearcalulator').null)
     console.log(clear)
   }
 
-  let clearcalculator = $id('clearcalculator')
+  let clearbtn = $id('clearbtn')
 
-  if (clearcalculator) {
-    clearcalculator.addEventListener('click', clearcalculator)
+  if (clearbtn) {
+    clearbtn.addEventListener('click', clear)
   }
 
   let calculateBtn = $id('calculate-btn');
