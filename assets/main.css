@@ -6,6 +6,9 @@ body {
     display: flex;
     flex-direction: column;
 }
+.naruto {
+    background-image: url(https://gen.jut.su/chakranature/background_main.dark.jpg?3)
+}
 *{
     color: black;
     margin: 0;
@@ -22,7 +25,7 @@ header{
     flex-direction: row;
     align-items: center;
     width: 80%;
-    background: #FCF3CF ;
+    background: #cdcdd3 ;
     height: 120px;
 }
 
@@ -59,10 +62,10 @@ h2 {
 }
 
 #navbar div:hover {
-    background-color: #FCF3CF;
+    background-color: gray;
 }
 #navbar div:hover a {
-    color: blue;
+    color: skyblue;
 }
 .link {
     border-radius: 8px;
@@ -70,7 +73,7 @@ h2 {
     flex-direction: column;
     width: 170px;
     height: 100px;
-    background: white;
+    background: #cdcdd3;
 }
 .link a {
     line-height: 100px;
@@ -85,19 +88,22 @@ h2 {
     flex-direction: column;
     width: 170px;
     height: 100px;
-    background-color: #FCF3CF;
+    background-color: gray;
 }
 .active a {
     line-height: 100px;
     text-align: center;
-    color:blue;
+    color:skyblue;
 }
 .footer {
+    margin: 0 auto;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100px;
-    background:#FCF3CF;
+    background:gray;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 .main .content .calculator {
     text-align: center;
@@ -112,7 +118,7 @@ input {
 }
 
 .content .calculator .calculator__btn {
-    background-color:white;
+    background-color:gray;
     border: black solid 1px;
     color: black;
     padding: 10px 40px;
@@ -123,16 +129,17 @@ input {
 }
 
 .content .calculator .calculator__btn:hover {
-    background-color: #FCF3CF;
-    color:black;
+    background-color: gray;
+    color:skyblue;
 }
 
 .content .article .text-center {
    text-align: center;
+   color: skyblue;
 }
 
 .content .calculator .calculator__operation {
-    background-color:white;
+    background-color:gray;
     border: black solid 1px;
     color: black;
     padding: 10px 40px;
@@ -144,18 +151,24 @@ input {
 }
 
 .calculator .calculator__operation:hover {
-    background-color: #FCF3CF;
-    color:black;
+    background-color: gray;
+    color:skyblue;
 }
 
 .calculator .calculator__number {
     border-radius: 8px;
     border: black solid 1px;
-    color: black;
+    color: skyblue;
+    background-color: gray;
 }
 
 .calculator #result {
     font-size: 30px;
     font-weight: bold;
     margin: 12px;
+    color: skyblue;
+}
+
+.main .content .article .maintext {
+    color: skyblue;
 }
