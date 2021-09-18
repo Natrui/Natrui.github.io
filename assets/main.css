@@ -15,13 +15,15 @@ a{
     text-decoration: none;
 }
 header{
+    margin: 0 auto;
+    border-radius: 8px;
+    border: black 1px solid;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 80%;
     background: #FCF3CF ;
     height: 120px;
-    /*background: #D8E3AB url(logo.png) no-repeat 5% 50%;*/
 }
 
 h2 {
@@ -55,6 +57,7 @@ h2 {
 .logo img {
     width: 100px;
 }
+
 #navbar div:hover {
     background-color: #FCF3CF;
 }
@@ -62,6 +65,7 @@ h2 {
     color: blue;
 }
 .link {
+    border-radius: 8px;
     border: solid 1px black;
     flex-direction: column;
     width: 170px;
@@ -107,16 +111,44 @@ input {
     padding: 3px;
 }
 
-button {
-    min-width: 100px;
-    margin: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 23px;
+.content .calculator .styleBtn {
+    background-color:white;
+    border: black solid 1px;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-select {
-    width: 50px;
-    font-size: 30px;
+.content .calculator .styleBtn:hover {
+    background-color: #FCF3CF;
+    color:black;
+}
+
+.content .article .Tcenter {
+   text-align: center; 
+}
+
+.content .calculator .styleselect {
+    background-color:white;
+    border: black solid 1px;
+    color: black;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
     font-weight: bold;
+}
+
+.content .calculator .styleselect:hover {
+    background-color: #FCF3CF;
+    color:black;
+}
+.content .calculator .styleimput {
+    border-radius: 8px;
+    border: black solid 1px;
+    color: black;
 }

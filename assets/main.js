@@ -27,11 +27,6 @@ function initMenu() {
   });
 }
 
-function changeColor(newColor) {
-  let elem = document.getElementById("para1");
-  elem.style.color = newColor;
-}
-
 function sum(x, y) {
   return x + y;
 }
@@ -75,15 +70,18 @@ function initCalculator() {
         break;
     }
 
-    $id("calc-result").innerText = result;
+    $id("result").innerText = result;
 
   }
 
   function clear() {
     let num1 = $id('num1');
     let num2 = $id('num2');
+    let result = $id('result');
     num1.value = '';
     num2.value = '';
+    result.innerText = '';
+    console.log(result)
   }
 
   let clearbtn = $id('clearbtn')
