@@ -27,12 +27,6 @@ function initMenu() {
   });
 }
 
-function sum(x, y) {
-  return x + y;
-}
-
-let s = sum(1, 50);
-
 function initArticleTitle() {
   let currentPath = '.' + location.pathname;
 
@@ -71,7 +65,6 @@ function initCalculator() {
     }
 
     $id("result").innerText = result;
-
   }
 
   function clear() {
@@ -81,13 +74,12 @@ function initCalculator() {
     num1.value = '';
     num2.value = '';
     result.innerText = '';
-    console.log(result)
   }
 
-  let clearbtn = $id('clearbtn')
+  let clearBtn = $id('clear-btn')
 
-  if (clearbtn) {
-    clearbtn.addEventListener('click', clear)
+  if (clearBtn) {
+    clearBtn.addEventListener('click', clear)
   }
 
   let calculateBtn = $id('calculate-btn');

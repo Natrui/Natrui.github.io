@@ -111,7 +111,7 @@ input {
     padding: 3px;
 }
 
-.content .calculator .styleBtn {
+.content .calculator .calculator__btn {
     background-color:white;
     border: black solid 1px;
     color: black;
@@ -122,16 +122,16 @@ input {
     border-radius: 8px;
 }
 
-.content .calculator .styleBtn:hover {
+.content .calculator .calculator__btn:hover {
     background-color: #FCF3CF;
     color:black;
 }
 
-.content .article .Tcenter {
-   text-align: center; 
+.content .article .text-center {
+   text-align: center;
 }
 
-.content .calculator .styleselect {
+.content .calculator .calculator__operation {
     background-color:white;
     border: black solid 1px;
     color: black;
@@ -143,12 +143,19 @@ input {
     font-weight: bold;
 }
 
-.content .calculator .styleselect:hover {
+.calculator .calculator__operation:hover {
     background-color: #FCF3CF;
     color:black;
 }
-.content .calculator .styleimput {
+
+.calculator .calculator__number {
     border-radius: 8px;
     border: black solid 1px;
     color: black;
+}
+
+.calculator #result {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 12px;
 }
