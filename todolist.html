@@ -2,19 +2,11 @@
 
 <head>
   <title>Yellow car</title>
-  <link rel="stylesheet" href="./assets/main.css" />
+  <link rel="stylesheet" href="./assets/todo.css" />
   <script src="./assets/todo.js"></script>
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html">
-        <img src="./assets/img/logo.png" alt="Logo" />
-      </a>
-    </div>
-    <div class="title">Yellow car</div>
-  </header>
   <div class="main">
     <div id="navbar">
       <div class="link"><a href="./">Main</a></div>
@@ -28,13 +20,25 @@
       <div class="article">
         <h2 class="text-center" id="article-title"></h2>
       </div>
+      <div class="maintext">
+        <div id="MyTodo" class="todo">
+          <h2>My To do list</h2>
+          <imput type="text" id="myInput" placeholder="Напиши...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul id="myUl">
+          <li>Сдать ЕГЭ</li>
+          <li class="checked">Не заболеть</li>
+          <li>Поужинать</li>
+          <li>Купить лимонад</li>
+          <li>Прочитаьь Книгу</li>
+          <li>Щелкнуть пальцем</li>
+        </ul>
+      </div>
+
     </div>
 
   </div>
-  <footer class="footer">
-    <div class="title">Prodaction by: Natrui</div>
-  </footer>
-
 </body>
 
 </html>
