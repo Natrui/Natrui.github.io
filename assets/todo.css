@@ -1,0 +1,91 @@
+#navbar div:hover {
+    background-color: gray;
+}
+#navbar div:hover a {
+    color: skyblue;
+}
+.link {
+    border-radius: 8px;
+    border: solid 1px black;
+    flex-direction: column;
+    width: 170px;
+    height: 100px;
+    background: #cdcdd3;
+}
+.link a {
+    line-height: 100px;
+    display: block;
+    text-align: center;
+    height: 100%;
+    color:black;
+}
+.active {
+    text-align: center;
+    border: solid 1px black;
+    flex-direction: column;
+    width: 170px;
+    height: 100px;
+    background-color: gray;
+}
+.active a {
+    line-height: 100px;
+    text-align: center;
+    color:skyblue;
+}
+/* Тодо */
+* {
+    box-sizing: border-box; /* Позволяет изменять wight и height что бы изменялся не контент а блок */
+}
+
+body {
+    margin: 0;
+    min-width: 250px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+  ul li {
+    cursor: pointer; /* что бы типо кликать */
+    position: relative; /*Позволяет двигать элемент с помощью лефт топ райт ботом */
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s; /*херня какая то*/
+    
+    /* Сделать элементы списка недопустими для выбора */
+    -webkit-user-select: none; /*управляет поведением текста, несмотря на заспрет разрешает выделять */
+    -moz-user-select: none; /*управляет поведением текста, несмотря на заспрет разрешает выделять */
+    -ms-user-select: none;  
+    user-select: none; /*позволяет запретить выделение текста*/
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9; /*цвет зебры*/
+}
+
+ ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through; /*вычеркивание*/
+}
+/*кнопка отмены*/
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    }
