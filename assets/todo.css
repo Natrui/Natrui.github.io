@@ -55,11 +55,11 @@ ul {
     background: #eee;
     font-size: 18px;
     transition: 0.2s; /*херня какая то*/
-    
+
     /* Сделать элементы списка недопустими для выбора */
     -webkit-user-select: none; /*управляет поведением текста, несмотря на заспрет разрешает выделять */
     -moz-user-select: none; /*управляет поведением текста, несмотря на заспрет разрешает выделять */
-    -ms-user-select: none;  
+    -ms-user-select: none;
     user-select: none; /*позволяет запретить выделение текста*/
 }
 
@@ -67,7 +67,7 @@ ul li:nth-child(odd) {
     background: #f9f9f9; /*цвет зебры*/
 }
 
- ul li:hover {
+ul li:hover {
     background: #ddd;
 }
 
