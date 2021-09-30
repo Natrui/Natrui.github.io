@@ -55,8 +55,14 @@ ul {
     background: #eee;
     font-size: 18px;
     transition: 0.2s; /*херня какая то*/
-    
+
     /* Сделать элементы списка недопустими для выбора */
+<<<<<<< HEAD
+=======
+    -webkit-user-select: none; /*управляет поведением текста, несмотря на заспрет разрешает выделять */
+    -moz-user-select: none; /*управляет поведением текста, несмотря на заспрет разрешает выделять */
+    -ms-user-select: none;
+>>>>>>> da7121b039f51643b04afbc191eda2cc9a61b165
     user-select: none; /*позволяет запретить выделение текста*/
 }
 
@@ -64,7 +70,7 @@ ul li:nth-child(odd) {
     background: #f9f9f9; /*цвет зебры*/
 }
 
- ul li:hover {
+ul li:hover {
     background: #ddd;
 }
 
@@ -86,6 +92,7 @@ ul li.checked::before {
     transform: rotate(45deg); /* Поворот элемента на заданный угол относительно точки трансформации, задаваемой свойством transform-origin. */
     height: 15px;
     width: 7px;
+<<<<<<< HEAD
 }
 
 .close {
@@ -140,3 +147,6 @@ input {
 .addBtn:hover {
     background-color: #bbb;
 }
+=======
+    }
+>>>>>>> da7121b039f51643b04afbc191eda2cc9a61b165
