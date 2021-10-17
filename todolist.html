@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 
 <head>
   <title>Yellow car</title>
@@ -7,19 +7,20 @@
 </head>
 
 <body>
-  <div id="MyTodo" class="todo">
-    <h2>My To do list</h2>
-    <input type="text" id="myInput" placeholder="Напиши...">
-      <span onclick="newElement()" class="addBtn">Add</span>
+  <div id="todo">
+    <div class="panel">
+      <h2>My To do list</h2>
+      <input type="text" class="todo-input" placeholder="Напиши...">
+      <button class="add-btn">Add</button>
+      <!-- #todo > div > button -->
+    </div>
+    <ul class="items">
+      <li>
+        Hit the gym
+        <button class="delete">*</button>
+      </li>
+    </ul>
   </div>
-  <ul id="myUl">
-    <li>Сдать ЕГЭ</li>
-    <li class="checked">Не заболеть</li>
-    <li>Поужинать</li>
-    <li>Купить лимонад</li>
-    <li>Прочитать Книгу</li>
-    <li>Щелкнуть пальцем</li>
-  </ul>
 </body>
 
 </html>
