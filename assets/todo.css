@@ -37,7 +37,7 @@
     display: table;
     clear: both;
 }
-.li-text {
+.li-style {
     cursor: pointer;
     position: relative;
      padding: 12px 8px 12px 40px;
@@ -50,5 +50,8 @@
 .delete {
     position: absolute;
     right: 0;
-    padding: 12px 16px 12px 16px;
+}
+ 
+.items {
+    list-style-type: none;
 }

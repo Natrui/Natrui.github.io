@@ -21,13 +21,19 @@ function initTodoList() {
 
         let $li = createTag('li', $input.value);
 
+        let $done = createTag('button' , 'done');
+
         let $del = createTag('button', 'delete');
         $del.addEventListener('click', function (e) {
             e.stopPropagation();
             $li.remove();
         });
 
-        button.className = "delete"
+        $del.className = "delete"
+
+        $li.className = "li-style"
+
+        $li.appendChild($done);
 
         $li.appendChild($del);
 
