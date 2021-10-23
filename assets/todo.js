@@ -21,6 +21,7 @@ function initTodoList() {
 
         let $li = createTag('li', $input.value);
 
+
         let $done = createTag('button' , 'done');
 
         let $del = createTag('button', 'delete');
@@ -31,7 +32,14 @@ function initTodoList() {
 
         $del.className = "delete"
 
+        $done.className = "done"
+
         $li.className = "li-style"
+
+        
+        $done.innerHTML = '<img src  ="./assets/img/done.svg">';
+        
+        $del.innerHTML = '<img src  ="./assets/img/clear.svg">' ;
 
         $li.appendChild($done);
 

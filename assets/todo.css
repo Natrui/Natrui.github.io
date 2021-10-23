@@ -40,7 +40,7 @@
 .li-style {
     cursor: pointer;
     position: relative;
-     padding: 12px 8px 12px 40px;
+    padding: 12px 8px 12px 40px;
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
@@ -50,8 +50,27 @@
 .delete {
     position: absolute;
     right: 0;
+    border: 0px;
+    background-color: #eee;
+    cursor: pointer;
 }
  
 .items {
     list-style-type: none;
 }
+
+.li-style:hover {
+    background-color: #ddd;
+}
+
+.li-style:nth-child(odd) {
+    background:#f9f9f9;
+}
+
+.done {
+    position: absolute;
+    left: 0;
+    padding: 2px;
+    border: 0px;
+    cursor: pointer;
+}  
