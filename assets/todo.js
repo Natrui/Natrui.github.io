@@ -30,6 +30,13 @@ function initTodoList() {
             $li.remove();
         });
 
+        let $list = document.querySelector('ul')
+        $list.addEventListener('click' , function(l) {
+            if (l.target.tagName === 'li') {
+                l.target.classlist.toggle('checked')
+            }
+        }, false)
+
         $del.className = "delete"
 
         $done.className = "done"
