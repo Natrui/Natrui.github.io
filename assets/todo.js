@@ -30,16 +30,6 @@ function initTodoList() {
             $li.remove();
         });
 
-        let $list = document.querySelector('ul')
-        $list.addEventListener('click' , function(l) {
-            if (l.target.tagName === 'li') {
-                l.target.classlist.toggle('checked')
-                console.log(l)
-            }
-        }, false)
-        console.log(l)
-        
-
         $del.className = "delete"
 
         $done.className = "done"
@@ -59,8 +49,16 @@ function initTodoList() {
 
         $input.value = '';
     });
-}
 
+    let $list = document.querySelector('ul')
+        $list.addEventListener('click' , function(l) {
+            if (l.target.tagName === 'li') {
+                l.target.classList.toggle('checked')
+            }
+            console.log(l.target.classList)
+        }, false)
+
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     initTodoList();
