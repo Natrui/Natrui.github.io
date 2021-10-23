@@ -63,11 +63,8 @@ ul li {
     background-color: #ddd;
 }
 
-.li-style:nth-child(odd) {
-    background:#f9f9f9;
-}
-
 .done {
+    display: none;
     position: absolute;
     left: 0;
     padding: 2px;

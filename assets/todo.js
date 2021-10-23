@@ -52,10 +52,11 @@ function initTodoList() {
 
     let $list = document.querySelector('ul')
         $list.addEventListener('click' , function(l) {
-            if (l.target.tagName === 'li') {
+            console.log(l.target.tagName)
+            if (l.target.tagName === 'LI') {
                 l.target.classList.toggle('checked')
             }
-            console.log(l.target.classList)
+            
         }, false)
 
 }
