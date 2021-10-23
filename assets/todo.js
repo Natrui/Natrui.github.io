@@ -34,8 +34,11 @@ function initTodoList() {
         $list.addEventListener('click' , function(l) {
             if (l.target.tagName === 'li') {
                 l.target.classlist.toggle('checked')
+                console.log(l)
             }
         }, false)
+        console.log(l)
+        
 
         $del.className = "delete"
 
