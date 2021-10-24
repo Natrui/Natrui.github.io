@@ -67,7 +67,7 @@ ul li {
     display: none;
     position: absolute;
     left: 0;
-    padding: 2px;
+    padding: 4px;
     border: 0px;
     cursor: pointer;
 }  
@@ -86,7 +86,7 @@ ul li.checked::before {
     width: 7px;
     text-decoration: line-through;
   }
-  ul li.checked.done {
+  ul li.checked .done {
     display: block;
   }
   
