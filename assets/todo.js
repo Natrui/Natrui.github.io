@@ -1,6 +1,7 @@
-function createTag(tagName, text) {
+function createTag(tagName, html, className) {
     let $el = document.createElement(tagName);
-    $el.innerText = text;
+    $el.innerHTML = html;
+    $el.className = className || '';
     return $el;
 }
 
@@ -19,46 +20,29 @@ function initTodoList() {
             return;
         }
 
-        let $li = createTag('li', $input.value);
+        let $li = createTag('li', `<div class="item-text">${$input.value}</div>`, 'todo-item');
 
+        let $done = createTag('div', '<img src="./assets/img/done.svg" alt="Done">', 'done');
 
-        let $done = createTag('button' , 'done');
+        let $del = createTag('button', '<img src="./assets/img/clear.svg" alt="Clear">', 'delete');
 
-        let $del = createTag('button', 'delete');
         $del.addEventListener('click', function (e) {
             e.stopPropagation();
             $li.remove();
         });
 
-        $del.className = "delete"
+        $li.prepend($done);
 
-        $done.className = "done"
-
-        $li.className = "li-style"
-
-        
-        $done.innerHTML = '<img src  ="./assets/img/done.svg">';
-        
-        $del.innerHTML = '<img src  ="./assets/img/clear.svg">' ;
-
-        $li.appendChild($done);
-
-        $li.appendChild($del);
+        $li.append($del);
 
         $items.appendChild($li);
 
+        $li.addEventListener('click', function () {
+            $li.classList.toggle('checked');
+        });
+
         $input.value = '';
     });
-
-    let $list = document.querySelector('ul')
-        $list.addEventListener('click' , function(l) {
-            console.log(l.target.tagName)
-            if (l.target.tagName === 'LI') {
-                l.target.classList.toggle('checked')
-            }
-            
-        }, false)
-
 }
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
-.add-btn {
+#todo .add-btn {
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
@@ -16,7 +12,7 @@
     border: 0;
 }
 
-.todo-input {
+#todo .todo-input {
     margin: 0;
     border: none;
     border-radius: 0;
@@ -24,69 +20,75 @@
     padding: 10px;
     float: left;
     font-size: 16px;
-} 
-.panel {
+}
+
+#todo .panel {
     background-color: #f44336;
     padding: 30px 40px;
     color: white;
     text-align: center;
 }
 
-.panel:after {
+#todo .panel:after {
     content: "";
     display: table;
     clear: both;
 }
-ul li {
+
+#todo ul {
+    padding-inline-start: unset;
+}
+
+#todo ul li {
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 0 8px 0 0;
     background: #eee;
     font-size: 18px;
+    vertical-align: middle;
+    line-height: 40px;
     transition: 0.2s;
     user-select: none;
 }
 
-.delete {
-    position: absolute;
-    right: 0;
-    border: 0px;
-    background-color: #eee;
+#todo ul li.checked {
+    color: #666;
+    text-decoration: line-through;
+}
+
+#todo ul li .done {
+    padding: 8px 4px;
+    min-width: 32px;
+    border: 0;
     cursor: pointer;
 }
- 
-.items {
+
+#todo ul li .done img {
+    display: none;
+}
+
+#todo ul li.checked .done img {
+    display: block;
+}
+
+#todo .delete {
+    padding: 8px 4px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+#todo .items {
     list-style-type: none;
 }
 
-.li-style:hover {
+#todo .todo-item:hover {
     background-color: #ddd;
 }
 
-.done {
-    display: none;
-    position: absolute;
-    left: 0;
-    padding: 4px;
-    border: 0px;
-    cursor: pointer;
-}  
-.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
+#todo .item-text {
+    flex-grow: 1;
 }
-
-ul li.checked::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 16px;
-    height: 15px;
-    width: 7px;
-    text-decoration: line-through;
-  }
-  ul li.checked .done {
-    display: block;
-  }
-  
