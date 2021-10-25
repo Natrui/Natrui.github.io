@@ -44,7 +44,7 @@ function initTodoList() {
         $input.value = '';
     });
 }
-
+// тест комент//
 document.addEventListener('DOMContentLoaded', function () {
     initTodoList();
 });
