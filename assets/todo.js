@@ -45,6 +45,7 @@ function initTodoList() {
     });
 }
 // тест комент//
+// test comment 2
 document.addEventListener('DOMContentLoaded', function () {
     initTodoList();
 });
