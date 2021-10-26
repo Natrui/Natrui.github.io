@@ -44,8 +44,49 @@ function initTodoList() {
         $input.value = '';
     });
 }
+
+let song = {
+    musician: "Morgernshtern",
+    song: "Аристократ",
+    toplist: "first",
+    scores: 10
+};
+console.log(song);
+
+if (song.scores > 6) {
+    let quality = "top";
+    console.log(quality);
+} else {
+    let quality = "poop";
+    console.log(quality);
+};
+
+let song2 = {
+    musician: "Скриптонит",
+    song: "Положение",
+    scores: 3
+};
+console.log(song2);
+
+if (song2.scores > 6) {
+    let quality2 = "top";
+    console.log(quality2);
+} else {
+    let quality2 = "poop";
+    console.log(quality2);
+}
+
+const myNumber = 42 
+
+console.log(localStorage.getItem('number'));
+localStorage.setItem('number', myNumber);
+
+localStorage.setItem('song' , song);
+
 // тест комент//
 // test comment 2
 document.addEventListener('DOMContentLoaded', function () {
     initTodoList();
 });
+
+
