@@ -7,35 +7,20 @@ function createTag(tagName, html, className) {
 
 function initTodoList() {
     let $todo = document.getElementById('todo');
-    
+
     let $addBtn = $todo.querySelector('.add-btn');
     let $items = $todo.querySelector('.items');
     var $input = $todo.querySelector('input');
 
     $addBtn.addEventListener('click', function (e) {
         e.stopPropagation();
-        
+
         if ($input.value === '') {
             alert('You must write something!!!!');
             return;
         }
-/* Крч чел делает вот это, 'nj e,bdftn ryjgre addBtn .Я понял это как сохранять последний ли который был написан(Он сохраняеться в аппликатион в локал сторедже). Он сохраняеться если убрать все это и 34 строка
-        let tdMask = 'tdL_';
-        $todo.children().each(function(index , ef){            (и в целом вот эта конструкция не понятна. По сути тут я пробегаюсь по каждому елементу ли
-            var jefId = $(ef).attr('data-itemid').slice(4);                   присваеваю ему атрибут  и убираю 4 символа('tdL_')
-            if(jefId > nId)                                                
-            nId = jefId;                                                                                                )
-        });
 
-        nId++;
-        var nId = 0 ;
-        attr('data-itemid' , tdMask+nId);
-
-        localStorage.setItem(tdMask+nId , $input.value); вот тут поменять tdmask+ nID на просто '' любой ключ 
-        но как сделать так что бы он сохранял все не понятно. мне каежться что я куда то не туда поставил 32 строку 
-*/
-      
-        var $li = createTag('li', `<div class="item-text">${$input.value}</div>`, 'todo-item');
+        let $li = createTag('li', `<div class="item-text">${$input.value}</div>`, 'todo-item');
 
         let $done = createTag('div', '<img src="./assets/img/done.svg" alt="Done">', 'done');
 
@@ -93,7 +78,7 @@ if (song2.scores > 6) {
     console.log(quality2);
 }
 
-const myNumber = 42 
+const myNumber = 42
 
 console.log(localStorage.getItem('number'));
 localStorage.setItem('number', myNumber);
