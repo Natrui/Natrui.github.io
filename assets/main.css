@@ -6,27 +6,28 @@ body {
     display: flex;
     flex-direction: column;
 }
-.naruto {
-    background-image: url(https://gen.jut.su/chakranature/background_main.dark.jpg?3)
-}
-*{
-    color: black;
-    margin: 0;
-    padding: 0;
-}
 a{
     text-decoration: none;
 }
 header{
     margin: 0 auto;
     border-radius: 8px;
-    border: black 1px solid;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    width: 80%;
-    background: #cdcdd3 ;
-    height: 120px;
+    width: 100%;
+    height: 500px;
+}
+.MSGfone1 {
+    background-image: url(https://i.pinimg.com/originals/01/10/38/0110380d5db6c1c2706e78badd7c9c4d.jpg);
+    display: flex;
+    flex-direction: row;
+
+}
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -49,51 +50,56 @@ h2 {
     margin-bottom: 20px;
 }
 .title {
-    width: 100%;
-    font-size: 28px;
+    width: 50%;
+    font-size:50px;  /* уменьшение увеличение размера текста*/
     padding-top: 0px;
-    text-align: center;
+    text-align: left;
+    margin: 20px 50px 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter 50px;
 }
 .logo {
-    padding: 0px 10px;
-}
+    padding: 0px 30px 350px;
+    font-size: 0px;
+    
+} 
 .logo img {
-    width: 100px;
+    width: 200px;
 }
-
+/*
 #navbar div:hover {
-    background-color: gray;
+    background-color: gray;      При наведении мышки менятся задний цвет фона
 }
-#navbar div:hover a {
+#navbar div:hover a {            При наведении мышки меняется цвет текста
     color: skyblue;
 }
+    */
 .link {
     border-radius: 8px;
-    border: solid 1px black;
-    flex-direction: column;
+    flex-direction: row;
     width: 170px;
     height: 100px;
-    background: #cdcdd3;
+    
 }
 .link a {
     line-height: 100px;
     display: block;
     text-align: center;
     height: 100%;
-    color:black;
+    color:white;
+    flex-direction: row;
 }
 .active {
     text-align: center;
-    border: solid 1px black;
-    flex-direction: column;
+    flex-direction: row;
     width: 170px;
     height: 100px;
-    background-color: gray;
 }
 .active a {
     line-height: 100px;
     text-align: center;
-    color:skyblue;
+    border-bottom: 3px solid #ff6046;
+    flex-direction: row;
 }
 .footer {
     margin: 0 auto;
